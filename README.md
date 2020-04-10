@@ -12,7 +12,8 @@
 > > nasm.add(R.AX, R.DI)
 > > nasm.hlt()
 > >
-> > print(nasm.gen()) # или print(nasm) ```
+> > print(nasm.gen()) # или print(nasm)
+> > ```
 
 > ### EN
 > NASM code generator, writen in Python.<br>
@@ -26,5 +27,6 @@
 > > nasm.add(R.AX, R.DI)
 > > nasm.hlt()
 > >
-> > print(nasm.gen()) # Or print(nasm) ```
+> > print(nasm.gen()) # Or print(nasm)
+> > ```
 
