@@ -29,6 +29,8 @@ nasm.hlt()
 nasm.idiv(R.AX)
 nasm.imul(R.AX)
 nasm.in_(R.AX, 0xff20)
+nasm.int(0x10)
+nasm.into(0x10)
 
 # nasm.or_(R.AX, R.DI)
 # nasm.xor(R.AX, R.DI)

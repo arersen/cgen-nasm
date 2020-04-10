@@ -40,6 +40,9 @@ class NASM:
     def add_line(self, line):
         self.lines.append([self.tab, line])
 
+    def inj(self, c):
+        self.add_line([c])
+
     # ...
 
     def aaa(self):
@@ -119,6 +122,15 @@ class NASM:
 
     def in_(self, a, b):
         self.add_line(['in', a, b if not self.isInt(b) else hex(b)])
+
+    def inc(self, b):
+        self.add_line(['inc', b if not self.isInt(b) else hex(b)])
+
+    def int(self, b):
+        self.add_line(['int', b if not self.isInt(b) else hex(b)])
+
+    def into(self, b):
+        self.add_line(['into', b if not self.isInt(b) else hex(b)])
 
 
     def or_(self, a, b):
