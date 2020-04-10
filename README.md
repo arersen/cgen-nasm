@@ -4,7 +4,7 @@
  <br>
 
 > ### Установка
-> ```
+> ```bash
 > apt install git
 > pip install git+https://github.com/qbaddev/cgen-nasm.git
 > ```
