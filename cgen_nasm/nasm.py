@@ -132,6 +132,42 @@ class NASM:
     def into(self, b):
         self.add_line(['into', b if not self.isInt(b) else hex(b)])
 
+    def iret(self):
+        self.add_line(['iret'])
+
+    def jcxz(self, b):
+        self.add_line(['jcxz', b if not self.isInt(b) else hex(b)])
+
+    def jmp(self, b):
+        self.add_line(['jmp', b if not self.isInt(b) else hex(b)])
+
+    def lahf(self):
+        self.add_line(['lahf'])
+
+    def lds(self, a, b):
+        self.add_line(['lds', a, b if not self.isInt(b) else hex(b)])
+
+    def lea(self, a, b):
+        self.add_line(['lea', a, b if not self.isInt(b) else hex(b)])
+
+    def les(self, a, b):
+        self.add_line(['les', a, b if not self.isInt(b) else hex(b)])
+
+    def lock(self):
+        self.add_line(['lock'])
+
+    def lodsb(self):
+        self.add_line(['lodsb'])
+
+    def lodsw(self):
+        self.add_line(['lodsw'])
+
+    def loop(self, b):
+        self.add_line(['loop', b if not self.isInt(b) else hex(b)])
+
+    def mov(self, a, b):
+        self.add_line(['mov', a, b if not self.isInt(b) else hex(b)])
+
 
     def or_(self, a, b):
         self.add_line(['or', a, b if not self.isInt(b) else hex(b)])

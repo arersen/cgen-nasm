@@ -3,6 +3,8 @@ from cgen_nasm.regs import Regs as R
 
 nasm = NASM(org = 0x07C00)
 
+nasm.inj('; custom')
+
 nasm.aaa()
 nasm.aad()
 nasm.aam()
@@ -31,6 +33,16 @@ nasm.imul(R.AX)
 nasm.in_(R.AX, 0xff20)
 nasm.int(0x10)
 nasm.into(0x10)
+nasm.iret()
+nasm.jcxz('l2')
+nasm.jmp(0x200)
+nasm.lahf()
+nasm.lds(R.AX, '[1]')
+nasm.lea(R.EAX, '[ebx+8]')
+nasm.les(R.EAX, '[ebx+16]')
+nasm.lock()
+nasm.lodsb()
+nasm.lodsw()
 
 # nasm.or_(R.AX, R.DI)
 # nasm.xor(R.AX, R.DI)
@@ -39,5 +51,8 @@ nasm.into(0x10)
 
 with nasm.label('end') as label: # Label пример
     nasm.comment('comment')
+    nasm.loop('end')
+
+nasm.mov(R.AX, R.DI)
 
 print(nasm) # Получить код

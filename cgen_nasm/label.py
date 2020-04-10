@@ -10,5 +10,8 @@ class Label:
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.nasm.prev()
 
+    def __str__(self):
+        return self.name
+
         if exc_val:
             raise
