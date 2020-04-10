@@ -111,6 +111,16 @@ class NASM:
     def hlt(self):
         self.add_line(['hlt'])
 
+    def idiv(self, b):
+        self.add_line(['idiv', b if not self.isInt(b) else hex(b)])
+
+    def imul(self, b):
+        self.add_line(['imul', b if not self.isInt(b) else hex(b)])
+
+    def in_(self, a, b):
+        self.add_line(['in', a, b if not self.isInt(b) else hex(b)])
+
+
     def or_(self, a, b):
         self.add_line(['or', a, b if not self.isInt(b) else hex(b)])
 
