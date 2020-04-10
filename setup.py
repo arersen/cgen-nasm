@@ -26,7 +26,7 @@ setup(
     },
     install_requires = REQUIRED,
     extras_require = {},
-    package_data = {"cgen_nasm": ["/*/*"]},
+    package_data = {"cgen_nasm": ["./*/*"]},
     license = "GNU General Public License v3.0",
     classifiers = [
         "Programming Language :: Python",

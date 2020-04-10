@@ -1,5 +1,5 @@
 ## cgen-nasm
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![PyPI download total](https://img.shields.io/pypi/dt/cgen_nasm.svg)](https://pypi.python.org/pypi/cgen_nasm/)
 
 > ### RU
 > Генератор NASM кода написаный на Python.<br>
