@@ -4,14 +4,14 @@
  <br>
 
 > ### Установка
-> ```python
+> ```
 > apt install git
 > pip install git+https://github.com/qbaddev/cgen-nasm.git
 > ```
 <br>
 
 > ### Пример
-> ```
+> ```python
 > from cgen_nasm.nasm import NASM
 > from cgen_nasm.regs import Regs as R
 >
