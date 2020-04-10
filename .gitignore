@@ -1,2 +1,10 @@
 
 *.pyc
+cgen_nasm.egg-info/dependency_links.txt
+cgen_nasm.egg-info/entry_points.txt
+cgen_nasm.egg-info/PKG-INFO
+cgen_nasm.egg-info/SOURCES.txt
+cgen_nasm.egg-info/top_level.txt
+dist/cgen_nasm-1.0.0-py3-none-any.whl
+dist/cgen_nasm-1.0.0.tar.gz
+*.gz
