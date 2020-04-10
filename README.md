@@ -2,6 +2,7 @@
 
 > ### RU
 > Генератор NASM кода написаный на Python.<br>
+> Готово 27 инструкций!<br>
 > <br>
 > > ### Пример
 > > ```
@@ -17,6 +18,7 @@
 
 > ### EN
 > NASM code generator, writen in Python.<br>
+> Done 27 instructions!<br>
 > <br>
 > > ### Example
 > > ```
