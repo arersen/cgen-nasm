@@ -4,7 +4,7 @@
 > Генератор NASM кода написаный на Python.<br>
 > <br>
 > > ### Пример
-> > ```
+```
 > > from cgen_nasm.nasm import NASM
 > > from cgen_nasm.regs import Regs as R
 > >
@@ -19,7 +19,7 @@
 > Generator NASM code, writen in Python.<br>
 > <br>
 > > ### Example
-> > ```
+```
 > > from cgen_nasm.nasm import NASM
 > > from cgen_nasm.regs import Regs as R
 > >
