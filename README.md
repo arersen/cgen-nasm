@@ -3,15 +3,30 @@
 > ### RU
 > Генератор NASM кода написаный на Python.<br>
 > <br>
-> > ### Пример использования
+> > ### Пример
 > > ```
-> > from cgen_nasm.nasm import NASM<br>
-> > from cgen_nasm.regs import Regs as R<br>
-> > <br>
-> > nasm = NASM(org = 0x07C00) <br>
-> > nasm.add(R.AX, R.DI) <br>
-> > nasm.hlt() <br>
-> > <br>
-> > print(nasm.gen()) # Можно использовать как print(nasm) <br>
-> > ``` <br>
+> > from cgen_nasm.nasm import NASM
+> > from cgen_nasm.regs import Regs as R
+> >
+> > nasm = NASM(org = 0x07C00)
+> > nasm.add(R.AX, R.DI)
+> > nasm.hlt()
+> >
+> > print(nasm.gen()) # или print(nasm)
+```
+
+> ### EN
+> Generator NASM code, writen in Python.<br>
+> <br>
+> > ### Example
+> > ```
+> > from cgen_nasm.nasm import NASM
+> > from cgen_nasm.regs import Regs as R
+> >
+> > nasm = NASM(org = 0x07C00)
+> > nasm.add(R.AX, R.DI)
+> > nasm.hlt()
+> >
+> > print(nasm.gen()) # Or print(nasm)
+```
 
