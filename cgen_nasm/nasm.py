@@ -168,9 +168,30 @@ class NASM:
     def mov(self, a, b):
         self.add_line(['mov', a, b if not self.isInt(b) else hex(b)])
 
+    def movsb(self, a, b):
+        self.add_line(['movsb', a, b if not self.isInt(b) else hex(b)])
+
+    def movsw(self, a, b):
+        self.add_line(['movsw', a, b if not self.isInt(b) else hex(b)])
+
+    def mul(self, b):
+        self.add_line(['mul', b if not self.isInt(b) else hex(b)])
+
+    def neg(self, b):
+        self.add_line(['neg', b if not self.isInt(b) else hex(b)])
+
+    def nop(self):
+        self.add_line(['nop'])
+
+    def not_(self, b):
+        self.add_line(['not', b if not self.isInt(b) else hex(b)])
 
     def or_(self, a, b):
         self.add_line(['or', a, b if not self.isInt(b) else hex(b)])
+
+    def out(self, a, b):
+        self.add_line(['out', a, b if not self.isInt(b) else hex(b)])
+
 
     def xor(self, a, b):
         self.add_line(['xor', a, b if not self.isInt(b) else hex(b)])
@@ -178,8 +199,7 @@ class NASM:
     def test(self, a, b):
         self.add_line(['test', a, b if not self.isInt(b) else hex(b)])
 
-    def not_(self, b):
-        self.add_line(['not', b if not self.isInt(b) else hex(b)])
+# ...
 
     def label(self, name):
         self.add_line([name + ':'])
