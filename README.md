@@ -4,10 +4,8 @@
  <br>
 
 > ### Установка
-> ```bash
-> apt install git
-> pip install git+https://github.com/qbaddev/cgen-nasm.git
-> ```
+> * Клонировать репозиторий
+> * Распаковать папку cgen_nasm в папку с вашим проектом
 <br>
 
 > ### Пример
