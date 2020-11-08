@@ -1,3 +1,5 @@
+<b> Проект больше не разрабатывается! </b>
+
 ## cgen-nasm [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
  Генератор NASM кода написаный на Python.<br>
  Готово 48 инструкции!<br>
